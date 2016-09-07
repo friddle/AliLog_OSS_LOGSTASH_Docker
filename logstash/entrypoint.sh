@@ -6,5 +6,5 @@ while true; do
     nc -q 1 elasticsearch 9200 2>/dev/null && break
 done
 
-echo "Starting Kibana"
+echo "Starting Logstash"
 exec /opt/logstash/bin/logstash -f /opt/logstash/conf --allow-env
