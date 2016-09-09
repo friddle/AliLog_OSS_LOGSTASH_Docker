@@ -15,8 +15,6 @@ nginx-logstash:
     - INDEX=<INDEX>
     - COMPRESSION_TYPE=<SNAPPY:NONE>
     - LOGTYPE=<LOGTYPE>
-  labels:
-    aliyun.scale: '1'
   links:
     - elasticsearch
   volumes:
