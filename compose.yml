@@ -25,15 +25,15 @@ nginx-logstash:
   
 elasticsearch:
   image: elasticsearch:latest
-  labels: 
-      aliyun.routing.port_9200: http://elasticsearch
   volumes:
     - /data/:/usr/share/elasticsearch/data
+  expose:
+      - "9200"
   command: elasticsearch -Des.network.host=0.0.0.0
 
 kibana:
   image: friddle/kibana
-  labels:
-    aliyun.routing.port_5601:  log
+  expose:
+      - "5601"
   links:
     - elasticsearch

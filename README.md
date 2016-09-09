@@ -12,7 +12,7 @@ nginx-logstash:
     - LOGSTASH_MAJOR=2.3
     - LS_SETTINGS_DIR=/etc/logstash
     - OSSTYPE=nginx
-    - ENDPOINT=oss-cn-hangzhou-internal.aliyuncs.com
+    - ENDPOINT=<ENDPOINT>
     - ACCESS_KEY_SECRET=<SECRET_KEY>
     - ACCESS_KEY_ID=<SECRET_ID>
     - BUCKET=<BUCKET>
