@@ -39,7 +39,7 @@ default_app_id: "discover"
 
 # Time in milliseconds to wait for responses from the back end or elasticsearch.
 # This must be > 0
-request_timeout: 300000
+request_timeout: 3000000
 
 # Time in milliseconds for Elasticsearch to wait for responses from shards.
 # Set to 0 to disable.
