@@ -1,5 +1,6 @@
 FROM kibana:latest
 
+RUN sed 'httpredir.debian.org/mirrors.aliyun.com' -i /etc/apt/sources.list
 RUN apt-get update && apt-get install -y netcat
 
 COPY entrypoint.sh /tmp/entrypoint.sh
